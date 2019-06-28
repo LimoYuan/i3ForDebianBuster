@@ -16,7 +16,7 @@ function sources_list() {
   # 添加 Debiancn 源
   echo "deb https://mirrors.ustc.edu.cn/debiancn/ buster main" | tee /etc/apt/sources.list.d/debiancn.list
   wget -c https://mirrors.ustc.edu.cn/debiancn/debiancn-keyring_0~20161212_all.deb -O /tmp/debiancn-keyring.deb
-  command_for_sudo $username $password "apt install -y /tmp/debiancn-keyring.deb"
+  apt install -y /tmp/debiancn-keyring.deb
   apt update && apt upgrade -y
 }
 
