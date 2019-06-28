@@ -1,0 +1,146 @@
+# sddm 登录管理器
+ sddm
+# i3wm
+ i3
+# git
+ git
+# vim
+ vim
+# neofetch
+ neofetch
+# feh
+ feh
+# DNS
+ resolvconf
+# gtk theme change
+ lxappearance
+# gdebi
+ gdebi
+# qt4 配置
+ qt4-qtconfig
+# compton
+ compton
+# curl
+ curl
+# wget
+ wget
+# ranger 终端文件管理器
+ ranger
+# alsa
+ volumeicon-alsa
+# alsa
+ alsa-utils
+# pulse
+ pulseaudio
+# pulse 音量控制
+ pavucontrol
+# uming
+ fonts-arphic-uming
+# 多显示器快捷设置
+ arandr
+# XDG
+ xdg-utils
+# WIFI WPA
+ wpasupplicant
+# htop
+ htop
+# 7z
+ p7zip-full
+# terminal
+ xfce4-terminal
+# 通知
+ xfce4-notifyd
+# zsh
+ zsh
+# 电量管理
+ xfce4-power-manager*
+# 文件管理器
+ thunar
+# 鼠标主题
+ breeze-cursor-theme
+# 压缩 gui
+ file-roller
+# pulse 蓝牙模块
+ pulseaudio-module-bluetooth
+# 蓝牙管理 gui
+ blueman
+# rofi
+ rofi
+# xbindkeys
+# xbindkeys
+# zsh 插件
+ zsh-syntax-highlighting
+ zsh-autosuggestions
+ zsh-theme-powerlevel9k
+# 截图软件
+ scrot
+# 截图软件
+ flameshot
+# 图片处理
+ imagemagick
+# PDF
+ zathura*
+# tk
+ tk
+# 剪切板
+ parcellite
+# 网络管理
+ network-manager
+# 代理
+ proxychains4
+# gnome 网络管理
+ network-manager-gnome
+# 取色器
+# gpick
+# 常用软件
+ telegram-desktop
+ google-chrome-stable
+# editor
+# atom
+ code
+ numix-gtk-theme
+# 安装 noto-cjk 字体
+ fonts-noto*
+# 安装 chacha20 加解密依赖
+ libsodium-dev
+# vim YCM 依赖
+ ctags
+ cmake
+ python-dev
+ python3-dev
+ vim-nox
+# i3-gaps 依赖
+ libxcb-keysyms1-dev
+ libpango1.0-dev
+ libxcb-util0-dev
+ xcb
+ libxcb1-dev
+ libxcb-icccm4-dev
+ libyajl-dev
+ libev-dev
+ libxcb-xkb-dev
+ libxcb-cursor-dev
+ libxkbcommon-dev
+ libxcb-xinerama0-dev
+ libxkbcommon-x11-dev
+ libstartup-notification0-dev
+ libxcb-randr0-dev
+ libxcb-xrm0
+ libxcb-xrm-dev
+# polybar 依赖
+ cmake-data
+ libcairo2-dev
+ libxcb-ewmh-dev
+ libxcb-image0-dev
+ pkg-config
+ python-xcbgen
+ xcb-proto
+ libjsoncpp-dev
+ libasound2-dev
+ libpulse-dev
+ libmpdclient-dev
+ libiw-dev
+ libcurl4-openssl-dev
+# MPD && NCMPCPP
+ mpd
+ ncmpcpp

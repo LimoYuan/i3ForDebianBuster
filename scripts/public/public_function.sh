@@ -90,7 +90,7 @@ function is_exist() {
     ;;
   esac
 }
-# 普通用户sudo权限执行命令
+# 普通用户权限执行命令
 # $1 username
 # $2 password
 # $3 command
