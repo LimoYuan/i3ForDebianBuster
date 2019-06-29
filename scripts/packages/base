@@ -21,5 +21,9 @@
  make
  gcc g++
  cmake
+ autoconf
+# 网络相关
+ dnsutils
+ net-tools
 # perl
  perl
