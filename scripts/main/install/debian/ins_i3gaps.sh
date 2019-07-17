@@ -2,7 +2,7 @@
 
 # clone i3gaps
 if [[ -n $socks5_ip ]]; then
-    Echo_color "purple" "Socks5 proxy: $socks5_ip:$socks5_port"
+    Echo_color "purple" "Socks5 proxy: $socks5_ip"
     cd $tmp_path && proxychains4 -q git clone https://www.github.com/Airblader/i3 i3-gaps && cd i3-gaps
 else
     Echo_color "purple" "No use socks5 proxy"

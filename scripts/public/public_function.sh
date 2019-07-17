@@ -66,7 +66,7 @@ function isEmpty() {
 function cmd_success() {
     if [ $1 -eq 0 ] ;then
         print_dash
-        echo -e "\033[32m $2  Successful !  \033[0m"
+        echo -e "\033[32m $2  Successful!  \033[0m"
         print_dash
     else
         print_dash
@@ -121,11 +121,11 @@ SETPROXY
 
 # 普通用户权限执行命令
 # $1 username
-# $2 password
-# $3 command
-function command_for_sudo() {
-  echo $2 | sudo -S -u $1 $3
-  [ $? == 0 ] && { Echo_color "green" "Command exec successful ==>\n  $3"; return 0; } || { Echo_color "red" "Command exec failed ==>\n  $3"; exit; }
+# $2 commandord
+function command_for_user() {
+  Echo_color "purple" "su - $1 -c '$2'"
+  su - $1 -c "$2"
+  [ $? == 0 ] && { Echo_color "green" "Command exec successful ==>\n  $2"; return 0; } || { Echo_color "red" "Command exec failed ==>\n  $2"; exit; }
 }
 
 # welcome
