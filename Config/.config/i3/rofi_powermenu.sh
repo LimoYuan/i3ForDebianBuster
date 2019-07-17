@@ -19,10 +19,10 @@ fi
 
 if [[ "$action" == "shutdown" ]]
 then
-    pkexec shutdown now
+    pkexec systemctl poweroff
 fi
 
 if [[ "$action" == "reboot" ]]
 then
-    pkexec reboot
+    pkexec systemctl reboot
 fi
