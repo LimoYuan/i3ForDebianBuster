@@ -90,6 +90,35 @@ function is_exist() {
     ;;
   esac
 }
+# 关闭 Pcspkr
+function remove_pcspkr() {
+  #statements
+  echo "blacklist pcspkr" > /etc/modprobe.d/blacklist.conf
+  modprobe -r pcspkr
+}
+# 设置socks5代理
+function set_proxy() {
+  socks5_ip=$(curl -ks --socks5-hostname "$1:$2" ip.sb)
+  if [[ $? -eq 0 ]]; then 
+    echo -en "\033[32mSock5 IP: $socks5_ip\033[0m"
+    mv /etc/{proxychains4.conf,proxychains4.conf.bak}
+    cat <<SETPROXY | tee /etc/proxychains4.conf
+# proxychains.conf  VER 4.x
+#
+# HTTP, SOCKS4a, SOCKS5 tunneling proxifier with DNS.
+strict_chain
+proxy_dns 
+remote_dns_subnet 224
+tcp_read_time_out 15000
+tcp_connect_time_out 8000
+[ProxyList]
+socks5 $1 $2
+SETPROXY
+  else
+    Echo_color "yellow" "Socks5 proxy of no avail, no setting socks5 proxy."
+  fi
+}
+
 # 普通用户权限执行命令
 # $1 username
 # $2 password
