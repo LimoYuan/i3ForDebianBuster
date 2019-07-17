@@ -1,3 +1,60 @@
+############ Base Start ############
+# bash 补全
+ bash-completion
+# xserver evdev
+ xserver-xorg-input-evdev
+# xserver kbd
+ xserver-xorg-input-kbd
+# xserver mouse
+ xserver-xorg-input-mouse
+# xserver synaptics
+ xserver-xorg-input-synaptics
+# x11 xserver utils
+ x11-xserver-utils
+# x11 utils
+ x11-utils
+# x11 xkb utils
+ x11-xkb-utils
+# mesa
+ mesa-*
+# 编译相关
+ build-essential
+ make
+ gcc g++
+ cmake
+ autoconf
+# 网络相关
+ dnsutils
+ net-tools
+# perl
+ perl
+############ Base Ending       ############
+############ InputMethod Start ############
+# fcitx
+ fcitx fcitx-data
+ fcitx-frontend-qt4
+ fcitx-libs-qt
+ fcitx-module-x11
+ fcitx-bin
+ fcitx-frontend-all
+ fcitx-frontend-qt5
+ fcitx-table
+ fcitx-config-common
+ fcitx-frontend-fbterm
+ fcitx-libs
+ fcitx-module-dbus
+ fcitx-config-gtk
+ fcitx-frontend-gtk2
+ fcitx-libs-dev
+ fcitx-module-kimpanel
+ fcitx-ui-classic
+ fcitx-config-gtk2
+ fcitx-frontend-gtk3
+ fcitx-modules
+# rime
+ fcitx-rime
+############ InputMethod Ending ############
+############ SoftWare Start     ############
 # sddm 登录管理器
  sddm
 # i3wm
@@ -66,7 +123,7 @@
  blueman
 # rofi
  rofi
-# xbindkeys
+# xbindkeys 键盘多功能或笔记本键位映射
 # xbindkeys
 # zsh 插件
  zsh-syntax-highlighting
@@ -95,12 +152,18 @@
 # 常用软件
  telegram-desktop
  google-chrome-stable
-# editor
+# 常用编辑器
 # atom
  code
  numix-gtk-theme
-# 安装 noto-cjk 字体
+# 安装字体
  fonts-noto*
+ fonts-powerline
+# MPD && NCMPCPP
+ mpd
+ ncmpcpp
+############ SoftWare Ending     ############
+############ Depends  Start      ############
 # 安装 chacha20 加解密依赖
  libsodium-dev
 # vim YCM 依赖
@@ -128,19 +191,29 @@
  libxcb-xrm0
  libxcb-xrm-dev
 # polybar 依赖
+ build-essential
+ git
+ cmake
  cmake-data
- libcairo2-dev
- libxcb-ewmh-dev
- libxcb-image0-dev
  pkg-config
- python-xcbgen
- xcb-proto
- libjsoncpp-dev
+ python3-sphinx
+ libcairo2-dev
+ libxcb1-dev
+ libxcb-util0-dev
+ libxcb-randr0-dev
+ libxcb-composite0-dev
+ python-xcbgen xcb-proto
+ libxcb-image0-dev
+ libxcb-ewmh-dev
+ libxcb-icccm4-dev
+ libxcb-xkb-dev
+ libxcb-xrm-dev
+ libxcb-cursor-dev
  libasound2-dev
  libpulse-dev
+ i3-wm
+ libjsoncpp-dev
  libmpdclient-dev
- libiw-dev
  libcurl4-openssl-dev
-# MPD && NCMPCPP
- mpd
- ncmpcpp
+ libnl-genl-3-dev
+ ############ Depends  Ending      ############

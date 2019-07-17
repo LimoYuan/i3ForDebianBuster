@@ -98,15 +98,7 @@ function command_for_sudo() {
   echo $2 | sudo -S -u $1 $3
   [ $? == 0 ] && { Echo_color "green" "Command exec successful ==>\n  $3"; return 0; } || { Echo_color "red" "Command exec failed ==>\n  $3"; exit; }
 }
-# 初始化
-function init_script() {
-  #statements
-  print_dash
-  echo -en "\033[32m Please input you create username: \033[0m"
-  read user_name
-  echo "/home/$user_name/i3ForDebianTesting" > /tmp/temp
-  workPath=$(grep "i3For" /tmp/temp)
-}
+
 # welcome
 function script_description() {
     echo -e "\033[32m######################################################\033[0m"
