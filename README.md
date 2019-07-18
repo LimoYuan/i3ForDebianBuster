@@ -69,6 +69,7 @@
 #### [i3Gaps](https://github.com/Airblader/i3)
 #### [Polybar](https://github.com/jaagr/polybar)
 ~~[lightdm-webkit2-greeter](https://github.com/Antergos/web-greeter)~~
+<br>
 ~~[lightdm-webkit2-greeter_Themes](https://github.com/NoiSek/Aether)~~
 #### [Fonts_awesome](https://fontawesome.com/)
 #### [Fonts_material-design-icons](https://github.com/google/material-design-icons)
