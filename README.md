@@ -12,6 +12,7 @@
 - 最小化安装 Debian10, [官方网络安装镜像](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-10.0.0-amd64-netinst.iso)
 - 安装完成后使用`root`用户登录`tty`, 放心, 它是安全的QAQ~.
 - 克隆该仓库到`tmp`目录
+- 虚拟安装, 请先安装增强功能后在执行安装脚本
 
 ```sh
  apt update && apt install git -y
