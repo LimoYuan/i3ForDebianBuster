@@ -1,9 +1,12 @@
-# i3 For Debian Buster 个人备份
+# i3 For Debian Buster 个人快速安装脚本, 权当个人备份
+
 ------
 - 新手, 代码很烂, 不过能跑(权当个人备份) ....
 - 原`i3ForDebian9`已经**删除**, 不再更新.
 - 一些软件是编译安装, 如: `i3-Gaps`,`polybar`,`YCM`故会花费更多的时间, 具体取决于你机器的配置. `i3Gaps`, `Polybar`在`Debian10`中暂无官方和`debiancn`源安装途径.
+- `TTY`下全程英文提示, 英文太差不要吐嘈me, 不过应该能明白意思 ^^*~~.
 ------
+
 ## 安装方式
 
 - 最小化安装 Debian10, [官方网络安装镜像](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-10.0.0-amd64-netinst.iso)
@@ -11,19 +14,24 @@
 - 克隆该仓库到`tmp`目录
 
 ```sh
- # 建议设置git代理, 脚本正式执行会清除设置的git和http_proxy代理
+ apt update && apt install git -y
+ # 建议设置git代理或者http_http, 脚本正式执行会清除设置的git和http_proxy代理
  # http
  #  git config --global http.proxy http://host:port
  #  git config --global https.proxy https://host:port
  # socks5
  #  git config --global http.proxy 'socks5://http://host:port'
  #  git config --global https.proxy 'socks5://host:port'
-
+ # http_proxy
+ #  export http_proxy="http://host:port"
+ #  export https_proxy="http://host:port"
  cd /tmp
  git clone https://github.com/LimoYuan/i3ForDebianBuster
  cd i3ForDebianBuster 
  bash install.sh 
- # 跑完后检查下是否有错误
+ # 要求输入安装debian时创建的普通用户名和密码
+ # 如果有socks5代理, 请填写, 这会加速拉取i3Gaps, polybar 源码的速度, 并且会被添加到proxychains4配置文件中, 后续无需在单独添加
+ # 跑完后检查下是否有错误, 然后执行
  systemctl reboot
  # 重启登录到i3后执行
  bash $HOME/after_reboot.sh

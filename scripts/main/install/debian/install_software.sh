@@ -25,6 +25,7 @@ function install_software() {
   cmd_success $? "<< function: base_software -- $1 >>"
 }
 
+apt update && apt upgrade -y
 sources_list
 base_software
 install_software "software"

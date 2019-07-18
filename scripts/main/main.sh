@@ -37,3 +37,5 @@ remove_pcspkr
 print_dash
 Echo_color "green" "Successful, Please check has error. then exec command: systemctl reboot"
 print_dash
+
+rm -rf /tmp/i3ForDebianBuster
