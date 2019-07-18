@@ -1,8 +1,8 @@
 # i3 For Debian Buster 个人备份
 ------
-- 新手,代码很烂,不过能跑(权当个人备份) ....
+- 新手, 代码很烂, 不过能跑(权当个人备份) ....
 - `i3ForDebian9`已经**删除**, 不再更新.
-- 一些软件是编译安装, 如: `i3-Gaps`,`polybar`,`YCM`故会花费更多的时间,具体取决于你机器的配置. `i3Gaps`, `Polybar`在`Debian10`中暂无官方仓库安装途径.
+- 一些软件是编译安装, 如: `i3-Gaps`,`polybar`,`YCM`故会花费更多的时间, 具体取决于你机器的配置. `i3Gaps`, `Polybar`在`Debian10`中暂无官方仓库安装途径.
 ------
 ## 安装方式
 
@@ -78,5 +78,5 @@
 #### [Proxychains-ng](https://github.com/rofl0r/proxychains-ng)
 #### [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh)
 #### [VimPlus](https://github.com/chxuan/vimplus)
-#### [参考自这位 eoli3n 老哥的配置](https://github.com/eoli3n/dotfiles)
+#### [参考自这位`eoli3n`朋友的配置](https://github.com/eoli3n/dotfiles)
 #### 诚谢以上项目, 可能还有其他没有列出, 之后再添加
