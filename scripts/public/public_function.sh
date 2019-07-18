@@ -100,7 +100,9 @@ function remove_pcspkr() {
 function set_proxy() {
   socks5_ip=$(curl -ks --socks5-hostname "$1:$2" ip.sb)
   if [[ $? -eq 0 ]]; then 
+    print_dot
     echo -en "\033[32mSock5 IP: $socks5_ip\033[0m"
+    print_dot
     mv /etc/{proxychains4.conf,proxychains4.conf.bak}
     cat <<SETPROXY | tee /etc/proxychains4.conf
 # proxychains.conf  VER 4.x

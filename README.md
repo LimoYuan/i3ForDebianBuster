@@ -1,24 +1,35 @@
 # i3 For Debian Buster 个人备份
 ------
 - 新手, 代码很烂, 不过能跑(权当个人备份) ....
-- `i3ForDebian9`已经**删除**, 不再更新.
-- 一些软件是编译安装, 如: `i3-Gaps`,`polybar`,`YCM`故会花费更多的时间, 具体取决于你机器的配置. `i3Gaps`, `Polybar`在`Debian10`中暂无官方仓库安装途径.
+- 原`i3ForDebian9`已经**删除**, 不再更新.
+- 一些软件是编译安装, 如: `i3-Gaps`,`polybar`,`YCM`故会花费更多的时间, 具体取决于你机器的配置. `i3Gaps`, `Polybar`在`Debian10`中暂无官方和`debiancn`源安装途径.
 ------
 ## 安装方式
 
 - 最小化安装 Debian10, [官方网络安装镜像](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-10.0.0-amd64-netinst.iso)
-- 安装完成后使用`root`用户登录`tty`, 放心, 它是安全的.
+- 安装完成后使用`root`用户登录`tty`, 放心, 它是安全的QAQ~.
 - 克隆该仓库到`tmp`目录
 
 ```sh
- git clone https://github.com/LimoYuan/i3ForDebianBuster /tmp
- cd /tmp/i3ForDebianBuster 
+ # 建议设置git代理, 脚本正式执行会清除设置的git和http_proxy代理
+ # http
+ #  git config --global http.proxy http://host:port
+ #  git config --global https.proxy https://host:port
+ # socks5
+ #  git config --global http.proxy 'socks5://http://host:port'
+ #  git config --global https.proxy 'socks5://host:port'
+
+ cd /tmp
+ git clone https://github.com/LimoYuan/i3ForDebianBuster
+ cd i3ForDebianBuster 
  bash install.sh 
  # 跑完后检查下是否有错误
  systemctl reboot
- bash ~/after_reboot.sh
+ # 重启登录到i3后执行
+ bash $HOME/after_reboot.sh
 ```
-- 脚本中安装的所有软件包都在`scripts/pkg`下
+- 脚本中除发行版特殊的包外, 安装的所有软件包都在`scripts/pkg`下
+
 ## i3wm 快捷键
 | KeyMap | Action |
 | :---: | :---: |
@@ -68,8 +79,7 @@
 ## 该脚本使用到的一些程序和文件来自:
 #### [i3Gaps](https://github.com/Airblader/i3)
 #### [Polybar](https://github.com/jaagr/polybar)
-~~[lightdm-webkit2-greeter](https://github.com/Antergos/web-greeter)~~
-<br>
+~~[lightdm-webkit2-greeter](https://github.com/Antergos/web-greeter)~~ <br>
 ~~[lightdm-webkit2-greeter_Themes](https://github.com/NoiSek/Aether)~~
 #### [Fonts_awesome](https://fontawesome.com/)
 #### [Fonts_material-design-icons](https://github.com/google/material-design-icons)
