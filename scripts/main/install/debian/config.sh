@@ -68,7 +68,7 @@ function setting_services() {
 function remove_software() {
   sudo apt -y remove --purge dunst notification-daemon
 }
-# 删除有冲突的软件
+# 复制后续脚本到用户根目录
 function move_after_reboot_script() {
   cp -rf $work_path/scripts/main/install/debian/after_reboot.sh $user_home_path/
   chown $username:$username $user_home_path/after_reboot.sh

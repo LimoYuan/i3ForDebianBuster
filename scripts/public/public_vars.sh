@@ -13,7 +13,7 @@ read -p "password: " password
 # 普通用户家目录
 user_home_path=$(awk -F ':' '{if($1=="'$username'"){print $6; exit}}' /etc/passwd)
 # 设置代理, 拉取 i3Gaps, polybar, vim 插件, 可以不设置
-Echo_color "green" "Set socks5 proxy, Quick download i3Gaps, polybar... source code"
+Echo_color "green" "Set socks5 proxy, Quick download i3Gaps, polybar... source code. Do not use proxy, please enter."
 read -p "Socks5_Host: " socks5_host
 read -p "Socks5_Port: " socks5_port
 
