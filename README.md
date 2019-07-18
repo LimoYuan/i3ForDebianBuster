@@ -18,7 +18,7 @@
  systemctl reboot
  bash ~/after_reboot.sh
 ```
-## 脚本中安装的所有软件包都在`script/pkg`下
+- 脚本中安装的所有软件包都在`scripts/pkg`下
 ## i3wm 快捷键
 | KeyMap | Action |
 | :---: | :---: |
