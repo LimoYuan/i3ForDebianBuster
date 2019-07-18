@@ -23,12 +23,14 @@ cmd_success $? "add username $username to sudo group"
 
 # 关闭蜂鸣音
   remove_pcspkr
+# 安装所需要的软件
+. $work_path/scripts/main/install/debian/install_software.sh
+
 # 设置代理
   set_proxy "$socks5_host" "$socks5_port"
 # 调试, 到这里总有问题
   Echo_color "purple" "Socks5 proxy: $socks5_ip"
-# 安装所需要的软件
-. $work_path/scripts/main/install/debian/install_software.sh
+  
 # 安装i3-gaps
 . $work_path/scripts/main/install/debian/ins_i3gaps.sh
 # 安装polybar

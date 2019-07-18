@@ -30,7 +30,7 @@
  cd i3ForDebianBuster 
  bash install.sh 
  # 要求输入安装debian时创建的普通用户名和密码
- # 如果有socks5代理, 请填写, 这会加速拉取i3Gaps, polybar 源码的速度, 并且会被添加到proxychains4配置文件中, 后续无需在单独添加
+ # 如果有socks5代理, 请填写, 没有请直接回车, 这会加速拉取i3Gaps, polybar 源码的速度, 并且会被添加到proxychains4配置文件中, 后续无需在单独添加
  # 跑完后检查下是否有错误, 然后执行
  systemctl reboot
  # 重启登录到i3后执行
