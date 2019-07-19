@@ -20,7 +20,7 @@ read -p "Socks5_Port: " socks5_port
 isEmpty "$username" "username"
 isEmpty "$password" "password"
 isEmpty "$user_home_path" "user: $username Home path"
-isEmpty "$socks5_host" "Socks5 proxy: $socks5_host:$socks5_port"
+# isEmpty "$socks5_host" "Socks5 proxy: $socks5_host:$socks5_port"
 
 echo
 Echo_color "green" "username: $username"

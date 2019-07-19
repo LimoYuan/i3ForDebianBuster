@@ -38,7 +38,7 @@
  bash $HOME/after_reboot.sh
 ```
 - 脚本中除发行版特殊的包外, 安装的所有软件包都在`scripts/pkg`下
-
+- `polybar`不显示网速需要在配置文件中修改网卡名称, 修改后`Mod+shift+r`重载i3即可
 ## i3wm 快捷键
 | KeyMap | Action |
 | :---: | :---: |
